@@ -19,10 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
 	background: image_url('washi.png');
-	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+	font-family: "orchideemediumregular", sans-serif;
 }
-
+ 
 .navbar {
 	background: image_url('connectwork.png');
 	box-shadow: 0px 1px 3px #2a2a2a;
 }
+
+.navbar-inverse .navbar-brand {
+	color: #B57DEB;
+	font-family: "orchideemediumregular", sans-serif;
+	font-size:26px;
+	}
