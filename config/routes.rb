@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :comments, :images, only: :create
   ##  resources :comments, only: :create
   end
+  resources :users, only: :show
 end
