@@ -94,6 +94,7 @@
 <% end %>
 
 <div class="clear">
+
 </div>
 
  <!-- Button trigger modal -->
@@ -131,13 +132,13 @@
 
 <h1>Pictures</h1>
 
-<% @place.images.each do |image| %>
+<% @place.pictures.each do |picture| %>
 	<div>
 		<blockquote>
 
-				<%= image.caption %>
-				<% if image.image_url.present? %>
-						<%= image_tag image.image_url.url %>
+				<%= picture.caption %>
+				<% if picture.picture.present? %>
+						<%= image_tag picture.picture.url %>
 					<% end %>
 
 		</blockquote>
