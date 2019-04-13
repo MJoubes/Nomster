@@ -44,10 +44,11 @@
 
 </div>
 
+<%= will_paginate @places %>
 
 <% @places.each do |place| %>
+
 <div class="booyah-box col-10 offset-1">
-		<%= will_paginate @places %>
 		<h1><%= link_to place.name, place_path(place) %></h1><br />
 		<i><%= place.address %></i><br /><br />
 		<p><%= place.description %></p><br />
@@ -70,6 +71,10 @@
 
 <% end %>
 
+
+
 </div>
 
 <% end %>
+
+<%= will_paginate @places %>

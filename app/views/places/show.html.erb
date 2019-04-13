@@ -117,6 +117,7 @@
 
 										<div class="modal-body">
 											<%= f.input :caption %>
+											<%= f.input :image_url %>
 										</div>
 
 											<div class="modal-footer">
@@ -133,7 +134,11 @@
 <% @place.images.each do |image| %>
 	<div>
 		<blockquote>
+
 				<%= image.caption %>
+				<% if image.image_url.present? %>
+						<%= image_tag image.image_url.url %>
+					<% end %>
 
 		</blockquote>
 	</div>
