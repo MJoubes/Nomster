@@ -118,7 +118,7 @@
 
 										<div class="modal-body">
 											<%= f.input :caption %>
-											<%= f.input :image_url %>
+											<%= f.input :picture %>
 										</div>
 
 											<div class="modal-footer">
@@ -132,13 +132,14 @@
 
 <h1>Pictures</h1>
 
-<% @place.pictures.each do |picture| %>
+<% @place.images.each do |image| %>
 	<div>
 		<blockquote>
 
-				<%= picture.caption %>
-				<% if picture.picture.present? %>
-						<%= image_tag picture.picture.url %>
+				<%= image.caption %>
+				<% if image.picture.present? %>
+						<%= image_tag image.picture.url %>
+						<%= image_tag(image.picture.url, :class => "img-fluid") %>
 					<% end %>
 
 		</blockquote>
